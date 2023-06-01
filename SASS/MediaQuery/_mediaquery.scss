@@ -1,0 +1,128 @@
+// GENERAL //
+
+@media (max-width: 600px) {
+    header {
+      height: 60px;
+      padding: 0 10px;
+    }
+  
+    header .logo img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 100;
+    }
+  
+    .menu-icon {
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      background: url("../icon/bars-solid.svg") center center no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+  
+    .menu-toggle:checked+.menu-icon {
+      background: none;
+    }
+  
+    .menu-toggle:checked+.menu-icon::before {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-toggle:checked+.menu-icon::after {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  
+    .menu-toggle:checked~nav {
+      display: block;
+    }
+  
+    header nav {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      z-index: 99;
+      padding: 10px;
+    }
+  
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    header nav li {
+      margin: 10px auto;
+    }
+  
+    header nav a {
+      font-size: 14px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  // INDEX //
+
+  @media (max-width: 600px) {
+    .banner-image-horizontal {
+      display: none;
+      // Oculta la imagen horizontal //
+    }
+  
+    .banner-image-vertical {
+      display: block;
+      // Muestra la imagen vertical //
+      width: 90%;
+      height: auto;
+      margin: 30px;
+      max-height: 100vh;
+    }
+  
+    .titulo-mobil {
+      display: flex;
+      justify-content: center;
+      margin: 50px auto;
+    }
+  }
+
+  // CONTACTO //
+
+  @media screen and (max-width: 600px) {
+  div.info {
+    grid-template-columns: 1fr;
+  }
+
+  div.info .map-container {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 600px) {
+    .contact .php-email-form .form-group {
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    .contact .php-email-form label {
+      text-align: left;
+    }
+  
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+      width: 100%;
+    }
+  }
+  
+  

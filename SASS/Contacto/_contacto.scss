@@ -1,0 +1,135 @@
+div.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  div.info .address {
+    grid-column: 1;
+  }
+  
+  div.info .phone {
+    grid-column: 1;
+  }
+  
+  div.info .email {
+    grid-column: 1;
+  }
+  
+  div.info .map-container {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+  
+  .map{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title h2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .section-title p{
+    text-align: center;
+  }
+  
+  .contact .info {
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    border: solid rgb(255, 255, 255);
+    float: left;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(242, 135, 13);
+  }
+  
+  .contact .info .email p {
+    padding-top: 5px;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: rgb(242, 135, 13);
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact .php-email-form .form-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact .php-email-form label {
+    text-align: right;
+    padding-bottom: 8px;
+    white-space: nowrap;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: rgb(228, 173, 71);
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+    padding: 0 12px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #47b2e4;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #209dd8;
+  }

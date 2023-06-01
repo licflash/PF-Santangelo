@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #f0f8ff;
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .contacto,
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .contacto p,
+  .redes p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contacto a,
+  .redes a {
+    font-size: 24px;
+    color: #ffffff;
+  }
