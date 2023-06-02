@@ -13,17 +13,17 @@
 header {
   height: 80px;
   width: 100%;
+  position: sticky;
+  top: 0;
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgb(0, 0, 0);
   border-radius: 0 0 10px 10px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-  padding: 0 20px;
+  padding: auto;
 }
 
 /* Menú oculto en versión desktop */
@@ -36,18 +36,21 @@ header nav {
 header nav ul {
   display: flex;
   list-style: none;
+  font: bold 20px "Segoe UI";
   margin: 0;
   padding: 0;
 }
 
 header nav li {
   margin: 0 10px;
+  font: bold 20px "Segoe UI";
 }
 
 header nav a {
   font-size: 16px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  font: bold 20px "Segoe UI";
 }
 
 header .logo {
@@ -83,7 +86,6 @@ body {
 
 /* Contenido principal INDEX */
 .index_main {
-  padding-top: 80px;
   color: rgb(255, 255, 255);
 }
 
@@ -124,7 +126,7 @@ body {
   display: flex;
   justify-content: left;
   margin: auto;
-  width: 600px;
+  width: 500px;
   height: auto;
   padding: 20px;
 }
@@ -148,7 +150,6 @@ body {
   grid-row: 1;
   margin-top: 20px;
   text-align: center;
-  align-self: center;
   justify-self: center;
   margin: 10px;
   padding: 10px;
@@ -161,7 +162,7 @@ body {
   grid-column: 1;
   list-style-type: disc;
   padding: 0;
-  align-self: center;
+  text-align: center;
   justify-self: center;
   line-height: 3;
 }
@@ -170,7 +171,7 @@ body {
   grid-column: 2;
   list-style-type: disc;
   padding: 0;
-  align-self: center;
+  text-align: center;
   justify-self: center;
   line-height: 2;
 }
@@ -179,7 +180,7 @@ body {
   grid-column: 3;
   list-style-type: disc;
   padding: 0;
-  align-self: center;
+  text-align: center;
   justify-self: center;
   line-height: 3;
 }
@@ -418,12 +419,9 @@ footer {
     margin: 10px auto;
   }
   header nav a {
-    font-size: 14px;
-    color: #ffffff;
+    font: bold 20px "Segoe UI";
     text-decoration: none;
   }
-}
-@media (max-width: 600px) {
   .banner-image-horizontal {
     display: none;
   }
@@ -439,8 +437,6 @@ footer {
     justify-content: center;
     margin: 50px auto;
   }
-}
-@media screen and (max-width: 600px) {
   div.info {
     grid-template-columns: 1fr;
   }
@@ -449,17 +445,90 @@ footer {
     grid-row: 4;
   }
 }
-@media (max-width: 600px) {
-  .contact .php-email-form .form-group {
-    display: block;
-    margin-bottom: 20px;
+.contact .php-email-form .form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form label {
+  text-align: left;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .nosotrxstitulo {
+    text-align: center;
   }
-  .contact .php-email-form label {
-    text-align: left;
+  .historia {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
   }
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
+  .historia p {
+    padding: 50px;
+    text-align: justify;
+  }
+  .historia h2 {
+    align-self: center;
+    text-align: center;
+  }
+  .historia img {
+    display: flex;
     width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .composicioncoral {
+    display: flex;
+    justify-content: space-around;
+  }
+  .coro {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid hsl(290, 70%, 37%);
+    padding: auto;
+  }
+  .coro h3 {
+    grid-row: 1;
+    margin-top: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #add8e6;
+    color: #ffffff;
+  }
+  .segundos_detalle {
+    grid-column: 1;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 3;
+  }
+  .primxs_detalle {
+    grid-column: 2;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 2;
+  }
+  .sobreprimxs_detalle {
+    grid-column: 3;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 3;
   }
 }
 

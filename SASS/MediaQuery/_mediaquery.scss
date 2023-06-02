@@ -1,106 +1,95 @@
-// GENERAL //
-
 @media (max-width: 600px) {
-    header {
-      height: 60px;
-      padding: 0 10px;
-    }
-  
-    header .logo img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .menu-toggle {
-      display: none;
-      position: absolute;
-      top: 15px;
-      right: 10px;
-      cursor: pointer;
-      z-index: 100;
-    }
-  
-    .menu-icon {
-      display: inline-block;
-      width: 30px;
-      height: 20px;
-      background: url("../icon/bars-solid.svg") center center no-repeat;
-      background-size: cover;
-      cursor: pointer;
-    }
-  
-    .menu-toggle:checked+.menu-icon {
-      background: none;
-    }
-  
-    .menu-toggle:checked+.menu-icon::before {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-  
-    .menu-toggle:checked+.menu-icon::after {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  
-    .menu-toggle:checked~nav {
-      display: block;
-    }
-  
-    header nav {
-      display: none;
-      position: fixed;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #000000;
-      z-index: 99;
-      padding: 10px;
-    }
-  
-    header nav ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    header nav li {
-      margin: 10px auto;
-    }
-  
-    header nav a {
-      font-size: 14px;
-      color: #ffffff;
-      text-decoration: none;
-    }
+  header {
+    height: 60px;
+    padding: 0 10px;
   }
 
-  // INDEX //
-
-  @media (max-width: 600px) {
-    .banner-image-horizontal {
-      display: none;
-      // Oculta la imagen horizontal //
-    }
-  
-    .banner-image-vertical {
-      display: block;
-      // Muestra la imagen vertical //
-      width: 90%;
-      height: auto;
-      margin: 30px;
-      max-height: 100vh;
-    }
-  
-    .titulo-mobil {
-      display: flex;
-      justify-content: center;
-      margin: 50px auto;
-    }
+  header .logo img {
+    width: 30px;
+    height: 30px;
   }
 
-  // CONTACTO //
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
 
-  @media screen and (max-width: 600px) {
+  .menu-icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background: url("../icon/bars-solid.svg") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .menu-toggle:checked+.menu-icon {
+    background: none;
+  }
+
+  .menu-toggle:checked+.menu-icon::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle:checked+.menu-icon::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .menu-toggle:checked~nav {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    z-index: 99;
+    padding: 10px;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  header nav li {
+    margin: 10px auto;
+  }
+
+  header nav a {
+    font: $text-header;
+    text-decoration: none;
+  }
+
+  .banner-image-horizontal {
+    display: none;
+    // Oculta la imagen horizontal //
+  }
+
+  .banner-image-vertical {
+    display: block;
+    // Muestra la imagen vertical //
+    width: 90%;
+    height: auto;
+    margin: 30px;
+    max-height: 100vh;
+  }
+
+  .titulo-mobil {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+  }
+
   div.info {
     grid-template-columns: 1fr;
   }
@@ -111,20 +100,101 @@
   }
 }
 
-@media (max-width: 600px) {
-    .contact .php-email-form .form-group {
-      display: block;
-      margin-bottom: 20px;
-    }
-  
-    .contact .php-email-form label {
-      text-align: left;
-    }
-  
-    .contact .php-email-form input,
-    .contact .php-email-form textarea {
-      width: 100%;
-    }
+.contact .php-email-form .form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form label {
+  text-align: left;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {  
+
+  .nosotrxstitulo{
+    text-align: center;
   }
-  
-  
+
+  .historia {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .historia p {
+    padding: 50px;
+    text-align: justify;
+  }
+
+  .historia h2 {
+    align-self: center;
+    text-align: center;
+  }
+
+  .historia img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+ 
+  .composicioncoral {
+    display: flex;
+    justify-content: space-around;
+    }
+
+  .coro {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid hsl(290, 70%, 37%);
+    padding: auto;
+  }
+
+  .coro h3 {
+    grid-row: 1;
+    margin-top: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #add8e6;
+    color: #ffffff;
+  }
+
+  .segundos_detalle {
+    grid-column: 1;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 3
+  }
+
+  .primxs_detalle {
+    grid-column: 2;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 2
+  }
+
+  .sobreprimxs_detalle {
+    grid-column: 3;
+    list-style-type: disc;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    line-height: 3
+  }
+}
