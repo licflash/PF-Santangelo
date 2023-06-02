@@ -2,7 +2,7 @@
   header {
     height: 60px;
     padding: 0 10px;
-  }
+  } //Header//
 
   header .logo img {
     width: 30px;
@@ -98,21 +98,23 @@
     grid-column: 1;
     grid-row: 4;
   }
+
+  .contact .php-email-form .form-group {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .contact .php-email-form label {
+    text-align: left;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    width: 100%;
+  }
 }
 
-.contact .php-email-form .form-group {
-  display: block;
-  margin-bottom: 20px;
-}
 
-.contact .php-email-form label {
-  text-align: left;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  width: 100%;
-}
 
 @media screen and (max-width: 900px) {  
 
