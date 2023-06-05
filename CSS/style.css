@@ -221,7 +221,7 @@ h1 {
 
 .contenedor_fechas .fechas_futuras .lista_fechas {
   margin-top: 10px;
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 .imagen_fechas {
