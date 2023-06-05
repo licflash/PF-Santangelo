@@ -1,13 +1,14 @@
 .section-title h2 {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding: 20px;
   color: $text-color;
 }
 
 .section-title p {
   text-align: center;
   color: $text-color;
+  padding: 20px;
 }
 
 div.info {
@@ -41,6 +42,7 @@ div.row {
   width: 100%;
   height: auto;
   margin-top: 20px;
+  padding: 10px
 }
 
 .contact .info {

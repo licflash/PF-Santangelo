@@ -73,6 +73,29 @@
     text-decoration: none;
   }
 
+  //GENERAL //
+
+h1{
+  font-size: 20px;
+  text-align: center;
+}
+
+h2{
+  font-size: 18px;
+}
+
+h3{
+  font-size: 16px;
+}
+
+p{
+  font-size: 14px;
+}
+
+li{
+  font-size: 14px;
+}
+
   //RESPONSIVO INDEX//
 
   .banner-image-horizontal {
@@ -107,15 +130,18 @@
   .contact .php-email-form .form-group {
     display: block;
     margin-bottom: 20px;
+    font-size: 14px;
   }
 
   .contact .php-email-form label {
     text-align: left;
+    font-size: 14px;
   }
 
   .contact .php-email-form input,
   .contact .php-email-form textarea {
     width: 100%;
+    font-size: 14px;
   }
 
   //RESPONSIVO FECHAS // 
@@ -161,10 +187,17 @@
     width: auto;
   }
 
+  .audiovisual {
+    grid-template-columns: 1fr;
+  }
+
+
+  .audiovisual .video .foto_video {
+    width: 100%;
+  }
 
 
   //RESPONSIVO FOOTER//
-
 
   .contacto p,
   .redes p {
@@ -268,7 +301,7 @@
     list-style-type: disc;
     padding: 0;
     align-self: center;
-    text-align: center; 
+    text-align: center;
     justify-self: center;
     list-style-type: none;
     line-height: 3
