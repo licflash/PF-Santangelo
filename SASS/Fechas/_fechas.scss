@@ -1,0 +1,45 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-style: $titulos;
+}
+
+
+.contenedor_fechas {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-gap: 10px;
+}
+
+.contenedor_fechas .fechas_futuras {
+    grid-column: 1;
+    padding: 0;
+    text-align: left;
+    justify-self: center;
+    line-height: 3
+}
+
+.contenedor_fechas .fechas_futuras .lista_fechas{
+    margin-top: 10px;
+    list-style-type: circle;
+
+}
+
+.imagen_fechas{
+    display: flex;
+    justify-self: center;
+    height: 500px;
+    width: auto;
+}
+
+.contenedor_fechas .fechas_pasadas {
+    grid-column: 3;
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
+    justify-self: center;
+    line-height: 3
+}

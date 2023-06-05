@@ -1,8 +1,11 @@
 @media (max-width: 600px) {
+
+  //RESPONSIVO HEADER//
+
   header {
     height: 60px;
     padding: 0 10px;
-  } //Header//
+  }
 
   header .logo img {
     width: 30px;
@@ -70,19 +73,21 @@
     text-decoration: none;
   }
 
+  //RESPONSIVO INDEX//
+
   .banner-image-horizontal {
     display: none;
-    // Oculta la imagen horizontal //
   }
 
   .banner-image-vertical {
     display: block;
-    // Muestra la imagen vertical //
     width: 90%;
     height: auto;
     margin: 30px;
     max-height: 100vh;
   }
+
+  // RESPONSIVO CONTACTO //
 
   .titulo-mobil {
     display: flex;
@@ -103,22 +108,83 @@
     display: block;
     margin-bottom: 20px;
   }
-  
+
   .contact .php-email-form label {
     text-align: left;
   }
-  
+
   .contact .php-email-form input,
   .contact .php-email-form textarea {
     width: 100%;
   }
+
+  //RESPONSIVO FECHAS // 
+
+  .contenedor_fechas {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    font-size: 18px;
+  }
+
+  .contenedor_fechas .fechas_futuras {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor_fechas .fechas_futuras .lista_fechas {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px
+  }
+
+
+  .contenedor_fechas .fechas_pasadas {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .contenedor_fechas .fechas_pasadas .lista_pasadas {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px
+  }
+
+  .imagen_fechas {
+    display: flex;
+    justify-self: center;
+    height: 250px;
+    width: auto;
+  }
+
+
+
+  //RESPONSIVO FOOTER//
+
+
+  .contacto p,
+  .redes p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .contacto a,
+  .redes a {
+    font-size: 16px;
+    color: $text-color;
+  }
+
 }
 
+@media screen and (max-width: 900px) {
 
+  //AJUSTE RESPONSIVO NOSOTRXS - HISTORIA//
 
-@media screen and (max-width: 900px) {  
-
-  .nosotrxstitulo{
+  .nosotrxstitulo {
     text-align: center;
   }
 
@@ -146,11 +212,13 @@
 }
 
 @media screen and (max-width: 550px) {
- 
+
+  //AJUSTE RESPONSIVO NOSOTRXS - CORO//
+
   .composicioncoral {
     display: flex;
     justify-content: space-around;
-    }
+  }
 
   .coro {
     margin: 20px;
@@ -178,8 +246,10 @@
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center;
     justify-self: center;
-    line-height: 3
+    line-height: 3;
+    list-style-type: none;
   }
 
   .primxs_detalle {
@@ -187,7 +257,9 @@
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center;
     justify-self: center;
+    list-style-type: none;
     line-height: 2
   }
 
@@ -196,7 +268,10 @@
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center; 
     justify-self: center;
+    list-style-type: none;
     line-height: 3
   }
+
 }

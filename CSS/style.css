@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   font-family: "Segoe UI", Tahoma;
   background-color: rgb(0, 0, 0);
 }
@@ -80,8 +79,20 @@ header .logo img {
 }
 
 body {
-  font: normal 18px "Tahoma";
+  font: normal 22px "Tahoma";
   color: rgb(255, 255, 255);
+}
+
+h1 {
+  font: bold 32px "Segoe UI";
+}
+
+h2 {
+  font: bold 24px "Segoe UI";
+}
+
+p {
+  font: normal 22px "Tahoma";
 }
 
 /* Contenido principal INDEX */
@@ -109,13 +120,13 @@ body {
 
 .historia {
   display: flex;
-  flex-direction: 2 column;
+  flex-direction: column;
   margin: 20px;
 }
 
 .historia p {
   padding: 50px;
-  text-align: justify;
+  text-align: center;
 }
 
 .historia h2 {
@@ -181,6 +192,50 @@ body {
   list-style-type: disc;
   padding: 0;
   text-align: center;
+  justify-self: center;
+  line-height: 3;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-style: bold 32px "Segoe UI";
+}
+
+.contenedor_fechas {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 10px;
+}
+
+.contenedor_fechas .fechas_futuras {
+  grid-column: 1;
+  padding: 0;
+  text-align: left;
+  justify-self: center;
+  line-height: 3;
+}
+
+.contenedor_fechas .fechas_futuras .lista_fechas {
+  margin-top: 10px;
+  list-style-type: circle;
+}
+
+.imagen_fechas {
+  display: flex;
+  justify-self: center;
+  height: 500px;
+  width: auto;
+}
+
+.contenedor_fechas .fechas_pasadas {
+  grid-column: 3;
+  list-style-type: disc;
+  padding: 0;
+  text-align: left;
   justify-self: center;
   line-height: 3;
 }
@@ -347,13 +402,13 @@ footer {
 
 .contacto p,
 .redes p {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .contacto a,
 .redes a {
-  font-size: 24px;
+  font-size: 28px;
   color: rgb(255, 255, 255);
 }
 
@@ -450,6 +505,49 @@ footer {
   .contact .php-email-form textarea {
     width: 100%;
   }
+  .contenedor_fechas {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    font-size: 18px;
+  }
+  .contenedor_fechas .fechas_futuras {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_fechas .fechas_futuras .lista_fechas {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px;
+  }
+  .contenedor_fechas .fechas_pasadas {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor_fechas .fechas_pasadas .lista_pasadas {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px;
+  }
+  .imagen_fechas {
+    display: flex;
+    justify-self: center;
+    height: 250px;
+    width: auto;
+  }
+  .contacto p,
+  .redes p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contacto a,
+  .redes a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
 }
 @media screen and (max-width: 900px) {
   .nosotrxstitulo {
@@ -503,15 +601,19 @@ footer {
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center;
     justify-self: center;
     line-height: 3;
+    list-style-type: none;
   }
   .primxs_detalle {
     grid-column: 2;
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center;
     justify-self: center;
+    list-style-type: none;
     line-height: 2;
   }
   .sobreprimxs_detalle {
@@ -519,7 +621,9 @@ footer {
     list-style-type: disc;
     padding: 0;
     align-self: center;
+    text-align: center;
     justify-self: center;
+    list-style-type: none;
     line-height: 3;
   }
 }
