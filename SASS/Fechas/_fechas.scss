@@ -5,6 +5,10 @@ h1 {
     font-style: $titulos;
 }
 
+h2 {
+    text-align: center;
+}
+
 
 .contenedor_fechas {
     margin: 10px;
@@ -17,14 +21,15 @@ h1 {
 .contenedor_fechas .fechas_futuras {
     grid-column: 1;
     padding: 0;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
     justify-self: center;
     line-height: 3
 }
 
 .contenedor_fechas .fechas_futuras .lista_fechas{
     margin-top: 10px;
-    list-style-type: disc;
+    text-align: center;
 }
 
 .imagen_fechas{
@@ -36,9 +41,14 @@ h1 {
 
 .contenedor_fechas .fechas_pasadas {
     grid-column: 3;
-    list-style-type: disc;
     padding: 0;
-    text-align: left;
+    text-align: cen;
     justify-self: center;
     line-height: 3
+}
+
+.contenedor_fechas .fechas_pasadas .lista_pasadas{
+    margin-top: 10px;
+    text-align: center;
+    list-style-type: none;
 }

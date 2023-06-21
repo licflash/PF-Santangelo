@@ -203,6 +203,10 @@ h1 {
   font-style: bold 32px "Segoe UI";
 }
 
+h2 {
+  text-align: center;
+}
+
 .contenedor_fechas {
   margin: 10px;
   display: grid;
@@ -214,14 +218,15 @@ h1 {
 .contenedor_fechas .fechas_futuras {
   grid-column: 1;
   padding: 0;
-  text-align: left;
+  text-align: center;
+  list-style-type: none;
   justify-self: center;
   line-height: 3;
 }
 
 .contenedor_fechas .fechas_futuras .lista_fechas {
   margin-top: 10px;
-  list-style-type: disc;
+  text-align: center;
 }
 
 .imagen_fechas {
@@ -233,11 +238,16 @@ h1 {
 
 .contenedor_fechas .fechas_pasadas {
   grid-column: 3;
-  list-style-type: disc;
   padding: 0;
-  text-align: left;
+  text-align: cen;
   justify-self: center;
   line-height: 3;
+}
+
+.contenedor_fechas .fechas_pasadas .lista_pasadas {
+  margin-top: 10px;
+  text-align: center;
+  list-style-type: none;
 }
 
 .audi {
@@ -486,7 +496,7 @@ footer {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #000000;
+    background-color: #4d4d4d;
     z-index: 99;
     padding: 10px;
   }
@@ -568,8 +578,8 @@ footer {
     text-align: center;
   }
   .contenedor_fechas .fechas_futuras .lista_fechas {
-    text-align: left;
-    list-style-type: disc;
+    text-align: center;
+    list-style-type: none;
     padding: 10px;
   }
   .contenedor_fechas .fechas_pasadas {
@@ -578,8 +588,8 @@ footer {
     text-align: center;
   }
   .contenedor_fechas .fechas_pasadas .lista_pasadas {
-    text-align: left;
-    list-style-type: disc;
+    text-align: center;
+    list-style-type: none;
     padding: 10px;
   }
   .imagen_fechas {
