@@ -1,7 +1,7 @@
 /// HOJA PRINCIPAL DE ESTILO SASS //
 
 /// IMPORT POR PÁGINA ///
-@import "Variables/variables";
+@import "Variables/variables"; //Variables //
 @import "General/estilogeneral"; //Estilo general//
 @import "Index/indexestyle"; //Estilo index //
 @import "Nosotrxs/nosotrxs"; //Estilo nosotrxs//
@@ -9,4 +9,4 @@
 @import "Audiovisual/audiovisual"; //Estilo Audiovisual //
 @import "Contacto/contacto"; //Estilo contacto //
 @import "Footer/footer"; // Estilo Footer //
-@import "MediaQuery/mediaquery";
+@import "MediaQuery/mediaquery"; // Media Query //
